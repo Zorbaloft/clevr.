@@ -15,6 +15,8 @@
 <script>
 import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue'; 
+import '/resources/css/custom-card.css';
+import '/resources/css/app.css';
 
 export default {
     components: {

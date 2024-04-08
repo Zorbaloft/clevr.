@@ -115,7 +115,7 @@
                 <a href="" class="text-decoration-none">
                     <v-hover>
                         <template v-slot:default="{ isHovering, props }">
-                            <v-card v-bind="props" :color="isHovering ? categorie.color   :  categorie.hover ">
+                            <v-card v-bind="props" :color="isHovering ? categorie.hover : categorie.color">
                                 <v-card-text class="d-flex align-center">
                                     <v-icon class="me-4 text-h3" :color="categorie.hover ? 'grey darken-3' : 'white'">{{
         categorie.icon }}</v-icon>
@@ -132,21 +132,35 @@
             </v-col>
         </v-row>
     </v-container>
-    
 
 
-    <v-row class="cta-section text-center my-5" style="background-color: #A1887F">
+
+    <v-row align="center" class="text-center my-5" style="background-color: #A1887F; height:75dvh">
         <v-col cols="12" md="6">
-            <h2 class="my-2">Join in on something big</h2>
+            <h2 class="my-2">Junte-se a algo maior</h2>
             <p class="my-2">
-                Join millions of others learning to code and level up their skills.
+                Junte-se a uma comunidade de aprendizado nacional e comece a aprender novas habilidades
             </p>
-            <v-btn class="my-2" color="primary">Join for Free</v-btn>
+            <v-btn class="my-2" rounded="xl" size="x-large" color="primary">Junte-se hoje!</v-btn>
         </v-col>
         <v-col cols="12" md="6">
-            <v-img :src="cta" alt="Group of students learning together" width="400" height="200"></v-img>
+            <v-img :src="cta" alt="Group of students learning together"></v-img>
         </v-col>
     </v-row>
+
+    <v-row align="center" class="cta-section  text-center my-5"  >
+        <v-col cols="12" md="6">
+            <v-img :src="cta2" alt="Group of students learning together"  ></v-img>
+        </v-col>
+        <v-col cols="12" md="6">
+            <h2 class="my-2">Torne-se um instrutor!</h2>
+            <p class="my-2">
+                Descubra como compartilhar conhecimento e ganhar dinheiro com isso!
+            </p>
+            <v-btn class="my-2" rounded="xl" size="x-large" color="primary">Ver mais!</v-btn>
+        </v-col>
+    </v-row>
+
 
     |
 
@@ -154,11 +168,13 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
 
-            cta: '/images/cta/cta1.png',
+            cta: '/images/cta/cta4.png',
+            cta2: '/images/cta/cta6.png',
             heroBG: 'images/banners/billboard-bg.png',
             heroBG2: 'images/banners/billboard-img.jpg',
             aboutBG: 'images/banners/about-img.jpg',
@@ -195,8 +211,8 @@ export default {
                     name: 'Category 1',
                     qty: 3,
                     icon: 'mdi-pencil-box',
-                    color: 'brown',
-                    hover:'indigo-accent-5',
+                    color: 'deep-orange-lighten-2',
+                    hover: 'deep-orange-darken-1',
 
                 }, {
                     id: 2,
@@ -204,7 +220,7 @@ export default {
                     qty: 5,
                     icon: 'mdi-video-box',
                     color: 'primary',
-                    hover:'indigo-accent-5',
+                    hover: 'indigo accent-4',
                 },
 
             ],
@@ -233,7 +249,4 @@ export default {
 };
 </script>
 
-<style scoped>
-@import '/resources/css/custom-card.css';
-@import '/resources/css/app.css';
-</style>
+<style scoped></style>

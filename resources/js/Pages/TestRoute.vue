@@ -1,23 +1,5 @@
 <template>
-    <!-- hero start -->
-    <v-container fluid :style="{ backgroundImage: 'url(' + heroBG + ')' }" class="  overflow-hidden"
-        style="max-height: 90dvh;">
-        <v-row class="pa-3 align-center  ">
-            <v-col cols="12" md="6" class="">
-                <h2 class="text-h1">Master Your Skills Online</h2>
-                <p class="">Online Courses Taught by Industry Titans!</p>
-                <v-form>
-                    <v-text-field placeholder="What are you trying to learn?" class="rounded-4"></v-text-field>
-                    <v-btn type="submit" size="large" class="btn-primary rounded-4">Search</v-btn>
-                </v-form>
-            </v-col>
-            <v-col cols="12" md="6" class=" ">
-                <v-img :src="heroBG2" alt="img" class="img-fluid h-75"></v-img>
-            </v-col>
-        </v-row>
-    </v-container>
-
-    <!-- hero cards -->
+    <hero-component />
     <v-container fluid class="features">
         <v-row class="d-flex justify-center  ">
             <v-col class="" v-for="trendingCourse in trendingCourses" :key="trendingCourse.id" cols="12" md="4 " sm="6">
@@ -29,7 +11,6 @@
             </v-col>
         </v-row>
     </v-container>
-    <!--  hero end -->
 
 
     <!-- Featured Courses -->
@@ -101,19 +82,10 @@
 
     <!-- Popular Categories -->
 
-    <v-container fluid>
-        <v-row align="center" class="text-center my-5" style="background-color: #A1887F; height:75dvh">
-            <v-col cols="12" md="6">
-                <h2 class="my-2">Junte-se a algo maior</h2>
-                <p class="my-2">
-                    Junte-se a uma comunidade de aprendizado nacional e comece a aprender novas habilidades
-                </p>
-                <v-btn class="my-2" rounded="xl" size="x-large" color="primary">Junte-se hoje!</v-btn>
-            </v-col>
-            <v-col cols="12" md="6">
-                <v-img :src="cta" alt="Group of students learning together"></v-img>
-            </v-col>
-        </v-row>
+    <v-container fluid :style="{ 'background-color': containerBackgroundColor }">
+        <CtaSection title="Junte-se a algo maior"
+            description="Junte-se a uma comunidade de aprendizado nacional e comece a aprender novas habilidades"
+            buttonText="Junte-se hoje!" imageSrc="cta" imageAlt="Group of students learning together" />
     </v-container>
 
 
@@ -135,11 +107,11 @@
                             <v-card v-bind="props" :color="isHovering ? categorie.hover : categorie.color">
                                 <v-card-text class="d-flex align-center">
                                     <v-icon class="me-4 text-h3" :color="categorie.hover ? 'grey darken-3' : 'white'">{{
-        categorie.icon }}</v-icon>
+                categorie.icon }}</v-icon>
                                     <div>
                                         <p class="fw-bold text-uppercase mb-1"
                                             :class="{ 'text--light': categorie.hover }">{{
-        categorie.name }}</p>
+                categorie.name }}</p>
                                         <p class="m-0">{{ categorie.qty }}</p>
                                     </div>
                                 </v-card-text></v-card>
@@ -152,18 +124,12 @@
 
 
 
-    <v-row align="center" class="cta-section  text-center my-5">
-        <v-col cols="12" md="6">
-            <v-img :src="cta2" alt="Group of students learning together"></v-img>
-        </v-col>
-        <v-col cols="12" md="6">
-            <h2 class="my-2">Torne-se um instrutor!</h2>
-            <p class="my-2">
-                Descubra como compartilhar conhecimento e ganhar dinheiro com isso!
-            </p>
-            <v-btn class="my-2" rounded="xl" size="x-large" color="primary">Ver mais!</v-btn>
-        </v-col>
-    </v-row>
+    <v-container fluid>
+        <CtaSection title="Torne-se um instrutor!"
+            description="Descubra como compartilhar conhecimento e ganhar dinheiro com isso!" buttonText="Ver mais!"
+            imageSrc="cta2" imageAlt="Group of students learning together" />
+
+    </v-container>
 
 
     |
@@ -172,13 +138,17 @@
 </template>
 
 <script>
-
+import HeroComponent from '../components/hero.vue';
+import CtaSection from '../components/cta.vue';
 export default {
+    components: {
+        HeroComponent,
+        CtaSection
+    },
     data() {
         return {
-
-            cta: '/images/cta/cta4.png',
-            cta2: '/images/cta/cta6.png',
+            containerBackgroundColor: 'brown darken-4',
+         
             heroBG: 'images/banners/billboard-bg.png',
             heroBG2: 'images/banners/billboard-img.jpg',
             aboutBG: 'images/banners/about-img.jpg',

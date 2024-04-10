@@ -1,7 +1,9 @@
 <template>
     <v-app>
         <Navbar />
+
         <v-main>
+
             <router-view v-slot="{ Component, route }">
                 <div :key="route.name">
                     <Component :is="Component" />
@@ -14,13 +16,15 @@
 
 <script>
 import Navbar from './components/navbar.vue';
-import Footer from './components/footer.vue'; 
+import Footer from './components/footer.vue';
+import hero from './components/hero.vue';
 import '/resources/css/custom-card.css';
 import '/resources/css/app.css';
 
 export default {
     components: {
         Navbar,
+        hero,
         Footer,
     },
 };

@@ -20,4 +20,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get("/test-me", function () {
     return 'Hello from Laravel!';
-  });
+});
+Route::get('/cta', function () {
+    return response()->json([
+        'title' => 'My Title',
+        'description' => 'My Description',
+        'ctaBackgroundColor' => 'brown darken-4',
+        'buttonText' => 'Click me',
+        'imageSrc' => '/images/cta/cta4.png',
+        'imageAlt' => 'My Image',
+    ]);
+});

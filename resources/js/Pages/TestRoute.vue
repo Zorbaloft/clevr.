@@ -1,8 +1,9 @@
 <template>
     <!-- hero start -->
-    <v-container fluid :style="{ backgroundImage: 'url(' + heroBG + ')' }">
-        <v-row class="pa-16 align-center">
-            <v-col cols="12" md="6" class="pe-5 mt-5 mt-md-0">
+    <v-container fluid :style="{ backgroundImage: 'url(' + heroBG + ')' }" class="  overflow-hidden"
+        style="max-height: 90dvh;">
+        <v-row class="pa-3 align-center  ">
+            <v-col cols="12" md="6" class="">
                 <h2 class="text-h1">Master Your Skills Online</h2>
                 <p class="">Online Courses Taught by Industry Titans!</p>
                 <v-form>
@@ -10,8 +11,8 @@
                     <v-btn type="submit" size="large" class="btn-primary rounded-4">Search</v-btn>
                 </v-form>
             </v-col>
-            <v-col cols="12" md="6" class="mt-5">
-                <v-img :src="heroBG2" alt="img" class="img-fluid"></v-img>
+            <v-col cols="12" md="6" class=" ">
+                <v-img :src="heroBG2" alt="img" class="img-fluid h-75"></v-img>
             </v-col>
         </v-row>
     </v-container>
@@ -100,6 +101,22 @@
 
     <!-- Popular Categories -->
 
+    <v-container fluid>
+        <v-row align="center" class="text-center my-5" style="background-color: #A1887F; height:75dvh">
+            <v-col cols="12" md="6">
+                <h2 class="my-2">Junte-se a algo maior</h2>
+                <p class="my-2">
+                    Junte-se a uma comunidade de aprendizado nacional e comece a aprender novas habilidades
+                </p>
+                <v-btn class="my-2" rounded="xl" size="x-large" color="primary">Junte-se hoje!</v-btn>
+            </v-col>
+            <v-col cols="12" md="6">
+                <v-img :src="cta" alt="Group of students learning together"></v-img>
+            </v-col>
+        </v-row>
+    </v-container>
+
+
     <v-container>
         <v-row class="d-flex justify-space-between align-center">
             <v-col cols="12" md="6">
@@ -135,22 +152,9 @@
 
 
 
-    <v-row align="center" class="text-center my-5" style="background-color: #A1887F; height:75dvh">
+    <v-row align="center" class="cta-section  text-center my-5">
         <v-col cols="12" md="6">
-            <h2 class="my-2">Junte-se a algo maior</h2>
-            <p class="my-2">
-                Junte-se a uma comunidade de aprendizado nacional e comece a aprender novas habilidades
-            </p>
-            <v-btn class="my-2" rounded="xl" size="x-large" color="primary">Junte-se hoje!</v-btn>
-        </v-col>
-        <v-col cols="12" md="6">
-            <v-img :src="cta" alt="Group of students learning together"></v-img>
-        </v-col>
-    </v-row>
-
-    <v-row align="center" class="cta-section  text-center my-5"  >
-        <v-col cols="12" md="6">
-            <v-img :src="cta2" alt="Group of students learning together"  ></v-img>
+            <v-img :src="cta2" alt="Group of students learning together"></v-img>
         </v-col>
         <v-col cols="12" md="6">
             <h2 class="my-2">Torne-se um instrutor!</h2>

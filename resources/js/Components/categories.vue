@@ -25,9 +25,32 @@
 <script>
 
 export default {
-    props: ['category'],
-}
+    data: () => ({
 
+        categories: [
+
+            {
+                id: 1,
+                name: 'Category 1',
+                qty: 3,
+                icon: 'mdi-pencil-box',
+                color: 'deep-orange-lighten-2',
+                hover: 'deep-orange-darken-1',
+
+            }, {
+                id: 2,
+                name: 'Category 1',
+                qty: 3,
+                icon: 'mdi-pencil-box',
+                color: 'deep-orange-lighten-2',
+                hover: 'deep-orange-darken-1',
+
+            }
+
+        ],
+    })
+
+}
 
 
 </script>

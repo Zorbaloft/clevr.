@@ -21,17 +21,17 @@
 <script>
 export default {
   data: () => ({
-    course: [
-      {
-        id: 1,
-        title: 'Course Title',
-        image: 'images/courses/item1.jpg',
-        author: 'Author Name',
-        rating: 4,
-        description: 'Course Description',
-      },
-      // Add more course objects here
-    ], 
+    course:
+    {
+      id: 1,
+      title: 'Course Title',
+      image: 'images/courses/item1.jpg',
+      author: 'Author Name',
+      rating: 4,
+      description: 'Course Description',
+    },
+    // Add more course objects here
+
   }),
 
 

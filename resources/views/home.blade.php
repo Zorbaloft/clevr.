@@ -59,7 +59,9 @@
                     </v-col>
                 </v-row>
             </v-container>
-            <cta-section></cta-section>
+
+            <cta-section :cta-id="1" color="#A1887F"></cta-section>
+
             <v-row class="d-flex justify-space-between align-center">
                 <v-col cols="12" md="6">
                     <p class="text--secondary">Pick your niche and get started</p>
@@ -70,6 +72,9 @@
                 </v-col>
             </v-row>
 
+            <categories-section></categories-section>
+
+            <cta-section :cta-id="2"></cta-section>
 
 
         </v-app>

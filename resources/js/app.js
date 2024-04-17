@@ -51,3 +51,4 @@ app.component("cta-section", CtaSection);
 app.component("categories-section", CategoriesSection);
 app.use(vuetify);
 app.mount("#app");
+

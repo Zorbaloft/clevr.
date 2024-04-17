@@ -36,6 +36,7 @@ import Hero from "./Components/hero.vue";
 import Home from './Pages/home.vue';
 import CourseCard from "./Components/course-card.vue";
 import CtaSection from "./Components/cta.vue";
+import CategoriesSection from "./Components/categories.vue";
 
 
 // create the app
@@ -47,6 +48,6 @@ app.component("layout", Layout);
 app.component("hero", Hero);
 app.component("course-card", CourseCard);
 app.component("cta-section", CtaSection);
-
+app.component("categories-section", CategoriesSection);
 app.use(vuetify);
 app.mount("#app");

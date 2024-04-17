@@ -3,8 +3,8 @@
         <navbar></navbar>
         <hero :heroBG2="heroBG2"> </hero>
         <v-main>
-            <v-container fluid class="features">
 
+            <v-container fluid class="features">
                 <v-row class="d-flex justify-center  ">
                     <v-col class="" cols="12" md="4 " sm="6">
                         <v-card class="custom-card mx-5" hover>
@@ -34,41 +34,59 @@
             </v-container>
 
             <v-container>
-                <v-row >
-                    <template v-for="course in courses" :key="course.id" >
+                <v-row>
+                    <template v-for="course in courses" :key="course.id">
                         <v-col class="mt-2" cols="12">
                             <strong>Categories </strong>
                         </v-col>
 
-                        <v-col v-for="j in 6" :key="`${course}${j}`" cols="6" md="2">
-                            <v-sheet height="300"><course-card :course="course"></course-card></v-sheet>
+                        <v-col v-for="j in 4" :key="`${course}${j}`" cols="5" md="3">
+                            <v-sheet width="250" eight="500"><course-card :course="course"></course-card></v-sheet>
                         </v-col>
+
                     </template>
                 </v-row>
 
 
             </v-container>
-            <v-sheet class="d-flex align-center justify-center flex-wrap text-center mx-auto px-4" elevation="4"
-                height="250" max-width="800" width="100%" rounded>
-                <div>
-                    <h2 class="text-h4 font-weight-black text-orange">Congratulations!</h2>
-
-                    <div class="text-h5 font-weight-medium mb-2">
-                        You are officially a part of the Vuetify Community!
-                    </div>
-
-                    <p class="text-body-2 mb-4">
-                        Please head over to your inbox/spam or others folder to find our verificaiton email.
-                    </p>
-
-                    <v-btn color="orange" variant="text">Go to Login</v-btn>
-                </div>
-            </v-sheet>
 
 
+            <cta-section v-for="ctaItem in cta" :key="ctaItem.id" :cta="ctaItem" color="#A1887F"></cta-section>
 
 
-
+            <v-container>
+                <v-row class="d-flex justify-space-between align-center">
+                    <v-col cols="12" md="6">
+                        <p class="text--secondary">Pick your niche and get started</p>
+                        <h2 class="display-6 font-weight-bold">Popular Categories</h2>
+                    </v-col>
+                    <v-col cols="12" md="6" class="text-end">
+                        <v-btn color="primary" class="mt-4">View all categories</v-btn>
+                    </v-col>
+                </v-row>
+                <v-row class="mt-2">
+                    <v-col cols="12" md="4" v-for="categorie in categories" :key="categorie.id">
+                        <a href="" class="text-decoration-none">
+                            <v-hover>
+                                <template v-slot:default="{ isHovering, props }">
+                                    <v-card v-bind="props" :color="isHovering ? categorie.hover : categorie.color">
+                                        <v-card-text class="d-flex align-center">
+                                            <v-icon class="me-4 text-h3"
+                                                :color="categorie.hover ? 'grey darken-3' : 'white'">{{
+            categorie.icon }}</v-icon>
+                                            <div>
+                                                <p class="fw-bold text-uppercase mb-1"
+                                                    :class="{ 'text--light': categorie.hover }">{{
+                                                    categorie.name }}</p>
+                                                <p class="m-0">{{ categorie.qty }}</p>
+                                            </div>
+                                        </v-card-text></v-card>
+                                </template>
+                            </v-hover>
+                        </a>
+                    </v-col>
+                </v-row>
+            </v-container>
 
         </v-main>
     </v-app>
@@ -93,10 +111,22 @@ export default {
             {
                 id: 1,
                 title: 'Course Title',
-                imageSrc: '/images/cta/cta4.png',
+                imageSrc: 'images/cta/cta4.png',
                 buttonText: 'click me',
                 description: 'Course Description',
             },
+        ],
+        categories: [
+
+            {
+                id: 1,
+                name: 'Category 1',
+                qty: 3,
+                icon: 'mdi-pencil-box',
+                color: 'deep-orange-lighten-2',
+                hover: 'deep-orange-darken-1',
+
+            }
 
         ],
     }),

@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <v-row align="center" class="cta-section text-center my-5" v-if="cta">
+        <v-row align="center" class="cta-section text-center my-5">
             <v-col cols="12" md="6">
                 <h2 class="my-2">{{ cta.title }}</h2>
                 <p class="my-2">{{ cta.description }}</p>
@@ -16,7 +16,18 @@
 <script>
 
 export default {
-    props: ['cta'],
+    data: () => ({
+        cta:
+        {
+            id: 1,
+            title: 'Course Title',
+            imageSrc: 'images/cta/cta4.png',
+            buttonText: 'click me',
+            description: 'Course Description',
+        },
+
+    }),
+
 }
 
 

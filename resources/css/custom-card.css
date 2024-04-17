@@ -39,15 +39,6 @@
 }
 
 /* features {cards make part of this section} */
-@media only screen and (min-width: 1400px) {
-
-
-    .features {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -80%);
-    }
-}
 
 @media only screen and (max-width: 1399px) {
     .features {

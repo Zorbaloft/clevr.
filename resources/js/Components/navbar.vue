@@ -8,7 +8,7 @@
 
         <v-icon>mdi-triangle</v-icon>
     </v-system-bar>
-    <v-app-bar app color="brown-darken-4" dark>
+    <v-app-bar app color="brown-darken-4" dark  >
         <v-btn icon>
             <v-icon @click.stop="drawer = !drawer">mdi-menu</v-icon>
         </v-btn>

@@ -13,9 +13,11 @@
 
 <body>
     <div id="app">
-        <!-- Conteúdo do componente Vue.js -->
         <v-app>
+
             <navbar></navbar>
+
+
             <hero></hero>
             <!-- features -->
             <v-container fluid class="features">
@@ -62,7 +64,7 @@
 
             <cta-section :cta-id="1" color="#A1887F"></cta-section>
 
-            <v-row class="d-flex justify-space-between align-center">
+            <v-row class="d-flex justify-space-between align-center pa-10">
                 <v-col cols="12" md="6">
                     <p class="text--secondary">Pick your niche and get started</p>
                     <h2 class="display-6 font-weight-bold">Popular Categories</h2>
@@ -74,7 +76,44 @@
 
             <categories-section></categories-section>
 
-            <cta-section :cta-id="2"></cta-section>
+            <v-container id="about" class="py-5 mt-5">
+                <v-row align="center" class="mt-5">
+                    <v-col cols="12" md="5" offset-md="1">
+                        <v-img src="/images/banners/about-img.jpg" aspect-ratio="1" class="rounded-circle"></v-img>
+                    </v-col>
+                    <v-col cols="12" md="5" class="mt-5 mt-md-0">
+                        <div class="mb-3">
+                            <p class="text--secondary">Learn more about us</p>
+                            <h2 class="display-6 font-weight-bold">About Us</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestiae nam commodi dolore
+                            vitae?
+                            Numquam minima cum asperiores deleniti possimus provident, officia itaque esse eius,
+                            delectus
+                            incidunt laudantium adipisci laboriosam!</p>
+                        <div class="d-flex">
+                            <v-icon class="text--secondary">mdi-check-circle</v-icon>
+                            <p class="ps-4">Engage with a worldwide community of inquisitive and imaginative
+                                individuals.</p>
+                        </div>
+                        <div class="d-flex">
+                            <v-icon class="text--secondary">mdi-check-circle</v-icon>
+                            <p class="ps-4">Learn a skill of your choice from the experts around the world from
+                                various
+                                industries</p>
+                        </div>
+                        <div class="d-flex">
+                            <v-icon class="text--secondary">mdi-check-circle</v-icon>
+                            <p class="ps-4">Learn a skill of your choice from the experts around the world from
+                                various
+                                industries</p>
+                        </div>
+                        <v-btn color="primary" class="mt-4">Learn more</v-btn>
+                    </v-col>
+                </v-row>
+            </v-container>
+
+            <cards-section color="#4E342E"></cards-section>
 
 
         </v-app>

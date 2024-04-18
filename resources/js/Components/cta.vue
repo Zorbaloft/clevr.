@@ -7,7 +7,9 @@
                 <v-btn class="my-2" rounded="xl" size="x-large" color="primary">{{ selectedCta.buttonText }}</v-btn>
             </v-col>
             <v-col cols="12" md="6">
-                <v-img :src="selectedCta.imageSrc" :alt="selectedCta.imageAlt"></v-img>
+                <v-parallax :src="selectedCta.imageSrc" height="400">
+                </v-parallax>
+                <!-- <v-img  :alt="selectedCta.imageAlt"></v-img> -->
             </v-col>
         </v-row>
     </v-container>

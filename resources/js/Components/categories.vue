@@ -1,5 +1,5 @@
 <template> <v-container>
-        <v-row class="mt-2">
+        <v-row class="my-2">
             <v-col cols="12" md="4" v-for="category in categories" :key="category.id">
                 <a href="" class="text-decoration-none">
                     <v-hover>

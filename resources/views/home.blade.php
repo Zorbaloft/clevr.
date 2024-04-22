@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel</title>
     <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite(['resources/js/app.js'])
 </head>
 
 <body>
-    <div id="app">
+
+    <div id="app" >
         <v-app>
-
             <navbar></navbar>
-
-
             <hero></hero>
             <!-- features -->
             <v-container fluid class="features">
@@ -112,10 +111,20 @@
                     </v-col>
                 </v-row>
             </v-container>
+            <section>
+                <v-container fluid class=" justify-center  align-center d-flex pa-16"
+                    :style="{ backgroundColor: '#3E2723' }">
+                    <div class="text-center">
+                        <h1 class="text-white ma-10">Howdy, we are Edulogy, we have brought together the best quality
+                            services,
+                            offers,
+                            projects for you!</h1>
+                    </div>
+                </v-container>
+            </section>
+            <cards-section></cards-section>
 
-            <cards-section color="#4E342E"></cards-section>
-
-
+            <footer-section></footer-section>
         </v-app>
     </div>
 

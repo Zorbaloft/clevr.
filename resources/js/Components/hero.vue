@@ -5,12 +5,18 @@
                 <div class="text-center text-xs-subtitle-1">
                     <h5 class="text-md-h4">Queres aprender mais para alem daquilo que te ensinam na universidade e na
                         escola?</h5>
-                    <p class="text-xs-subtitle-1">Junta-te a nós e vem fazer parte da primeira escola online
+                    <p class="text-xs-subtitle-1 custom-emphasis text-white">Junta-te a nós e vem fazer parte da
+                        primeira escola online
                         exclusivamente em português.
                         Aprende com formadores com anos de experiencia no mercado de trabalho português.</p>
 
+                    <div v-for="user in users" :key="user.id">
+                        <!-- Display your data here -->
+                        <span>{{ user.name }}</span>
+                    </div>
+
                     <div class="mt-5">
-                        <v-btn class="mx-3" @click="readMore">Read More</v-btn>
+                        <v-btn class="mx-3" color="brown-darken-3" @click="readMore">Read More</v-btn>
                         <v-btn class="mx-3" @click="buyNow">Buy Now</v-btn>
                     </div>
                 </div>
@@ -31,10 +37,22 @@
 <script>
 export default {
     name: 'Hero',
-    data: () => ({ heroBG2: '/videos/preview.mp4', }),
+    data: () => ({
+        heroBG2: '/videos/preview.mp4',
+        async created() {
+            const response = await fetch('127.0.0.1:8000/users');
+            this.users = await response.json();
+        },
+
+        users: [],
+    }),
     methods: {
         readMore() {
-            console.log('Read More');
+            fetch('http://127.0.0.1:8000/users')
+                .then(response => response.json())
+                .then(data => {
+                    this.users = data;
+                });
         },
         buyNow() {
             console.log('Buy Now');
@@ -48,7 +66,7 @@ export default {
 <style scoped>
 .home-message {
     position: absolute;
-    top: 0;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 0;

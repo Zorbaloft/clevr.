@@ -1,91 +1,22 @@
 <template>
     <div>
-        <!-- Section 1 -->
-        <v-section>
-            <v-container fluid class="h-50 align-center d-flex pa-16" :style="{ backgroundColor: color }">
-                <div class="text-center">
-                    <h1 class="text-white">Howdy, we are Edulogy, we have brought together the best quality services,
-                        offers,
-                        projects for you!</h1>
-                </div>
-            </v-container>
-        </v-section>
-
         <!-- Section 2 -->
-        <v-section>
-            <v-container fluid>
-                <v-row class="gr-2">
-                    <v-col cols="12" md="4">
-                        <v-card class="mx-auto" prepend-icon="mdi-laptop" subtitle="The #1 Vue UI Library" width="400">
-                            <template v-slot:title>
-                                <span class="font-weight-black">Learning system</span>
-                            </template>
-                            <v-card-text class="bg-surface-light pt-4">
-                                <span> All sections required for online training are included in Edulogy. </span>
-
-                            </v-card-text>
-                            <v-btn class="ma-5" href="#">Read more</v-btn>
-                        </v-card>
-                    </v-col>
-
-                    <v-col cols="12" md="4">
-                        <v-card class="mx-auto" prepend-icon="mdi-laptop" subtitle="The #1 Vue UI Library" width="400">
-                            <template v-slot:title>
-                                <span class="font-weight-black">Learning system</span>
-                            </template>
-                            <v-card-text class="bg-surface-light pt-4">
-                                <span> All sections required for online training are included in Edulogy. </span>
-
-                            </v-card-text>
-                            <v-btn class="readmore" href="#">Read more</v-btn>
-                        </v-card>
-                    </v-col>
-
-                    <v-col cols="12" md="4">
-                        <v-card class="mx-auto" prepend-icon="mdi-laptop" subtitle="The #1 Vue UI Library" width="400">
-                            <template v-slot:title>
-                                <span class="font-weight-black">Learning system</span>
-                            </template>
-                            <v-card-text class="bg-surface-light pt-4">
-                                <span> All sections required for online training are included in Edulogy. </span>
-
-                            </v-card-text>
-                            <v-btn class="readmore" href="#">Read more</v-btn>
-                        </v-card>
-                    </v-col>
-                </v-row>
-
-                <v-spacer></v-spacer>
-
-                <v-row>
-                    <v-col cols="12" md="6">
-                        <v-card class="mx-auto" prepend-icon="mdi-laptop" subtitle="The #1 Vue UI Library" width="400">
-                            <template v-slot:title>
-                                <span class="font-weight-black">Learning system</span>
-                            </template>
-                            <v-card-text class="bg-surface-light pt-4">
-                                <span> All sections required for online training are included in Edulogy. </span>
-
-                            </v-card-text>
-                            <v-btn class="readmore" href="#">Read more</v-btn>
-                        </v-card>
-                    </v-col>
-
-                    <v-col cols="12" md="6">
-                        <v-card class="mx-auto" prepend-icon="mdi-laptop" subtitle="The #1 Vue UI Library" width="400">
-                            <template v-slot:title>
-                                <span class="font-weight-black">Learning system</span>
-                            </template>
-                            <v-card-text class="bg-surface-light pt-4">
-                                <span> All sections required for online training are included in Edulogy. </span>
-
-                            </v-card-text>
-                            <v-btn class="readmore" href="#">Read more</v-btn>
-                        </v-card>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </v-section>
+        <section>
+            <v-row class="custom-positon gr-1 mt-10">
+                <v-col cols="12" md="4" v-for="card in cards.slice(0, 3)" :key="card.id">
+                    <v-card class="mx-auto" :prepend-icon="card.icon" :subtitle="card.subtitle" width="400">
+                        <template v-slot:title>
+                            <span class="font-weight-black">{{ card.title }}</span>
+                        </template>
+                        <v-card-text class="bg-surface-light pt-4">
+                            <span>{{ card.text }}</span>
+                        </v-card-text>
+                        <v-btn class="ma-5" :href="card.link">Read more</v-btn>
+                    </v-card>
+                </v-col>
+            </v-row>
+            <v-spacer></v-spacer>
+        </section>
     </div>
 </template>
 
@@ -93,5 +24,41 @@
 export default {
     name: 'CardsSection',
     props: ['color'],
+    data() {
+        return {
+            cards: [
+                {
+                    id: 1,
+                    title: 'Learning system',
+                    text: 'All sections required for online training are included in Edulogy.',
+                    link: '#',
+                    subtitle: 'The #1 Vue UI Library',
+                    icon: 'mdi-account',
+                },
+                {
+                    id: 2,
+                    title: 'Learning system',
+                    text: 'All sections required for online training are included in Edulogy.',
+                    link: '#',
+                    subtitle: 'The #1 Vue UI Library',
+                    icon: 'mdi-account',
+                },  {
+                    id: 3,
+                    title: 'Learning system',
+                    text: 'All sections required for online training are included in Edulogy.',
+                    link: '#',
+                    subtitle: 'The #1 Vue UI Library',
+                    icon: 'mdi-account',
+                },
+                // Add more cards as needed
+            ],
+        };
+    },
 }
 </script>
+<style scoped>
+.custom-positon {
+    position: relative;
+    bottom: 90px;
+}
+</style>

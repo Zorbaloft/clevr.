@@ -1,5 +1,3 @@
-
-=======
 # Clevr
 
 Clevr é um Sistema de Gestão de Aprendizagem construído apartir do framework Laravel. Fornece uma plataforma para gerir estudantes, administradores, cursos, aulas, avaliações e matrículas de forma eficiente.
@@ -46,6 +44,6 @@ Atribua cursos a estudantes.
 
 Monitorize matrículas de estudantes.
 
-Os estudantes podem fazer login , acessar cursos matriculados, acessar as aulas e deixar avaliações.
+Os estudantes podem fazer login , acessar cursos matriculados, acessar as aulas e deixar avaliações. 
 
 

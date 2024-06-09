@@ -39,6 +39,8 @@ Faça login como administrador para acessar todas as funcionalidades do LMS.
 
 Email: admin@admin.com
 Senha: password
+
+
 Crie cursos e adicione aulas.
 
 Atribua cursos a estudantes.

@@ -11,28 +11,33 @@ class CourseController extends Controller
      */
     public function index()
     {
+        $courses = Course::where('status', 'ativar')->latest()->limit(10)->get();
+
         return view('courses.index', [
-            'courses' => Course::where('status', 'enabled')->get(),
+            'courses' => $courses,
         ]);
     }
 
     /**
      * Display the specified resource.
      */
+
+    
     public function show(string $id)
     {
         $course = Course::where('slug', $id)->first();
-        $lessons = $course->lessons()->get();
-        $userCount = $course->users()->count(); // Get the number of users associated with the course
+        $lessons = $course->lessons()->orderBy('order')->get();
 
-        if ($course->status !== 'enabled') {
+        if ($course->status !== 'ativar') {
             abort(404);
         }
 
         return view('courses.show', [
-            'course' => Course::where('slug', $id)->first(),
+            'course' => $course,
             'lessons' => $lessons,
-            'userCount' => $userCount,
         ]);
     }
+    
+
+
 }

@@ -1,10 +1,19 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
+
+
 Route::get('/', HomeController::class)->name('home');
+Route::get('AboutUs', AboutUsController::class)->name('AboutUs');
+
+
+
+
+
 
 
 Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');

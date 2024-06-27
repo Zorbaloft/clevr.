@@ -27,13 +27,13 @@
                                 {{-- SEE OVERVIEW --}}
                                 <a href="{{ route('student.courses.show', $course->slug) }}"
                                     class="btn btn-outline-primary w-100">
-                                    {{ __('See Overview') }}
+                                    {{ __('Ver Detalhes') }}
                                 </a>
 
                                 {{-- RESUME COURSE --}}
                                 <a href="{{ route('student.courses.lessons.show', [$course->slug, $course->lessons[0]->id]) }}"
                                     class="btn btn-outline-primary w-100 mt-2">
-                                    {{ __('Resume Course') }}
+                                    {{ __('Resumir Curso') }}
                                 </a>
                             @else
                                 {{-- RATE THIS COURSE --}}
@@ -45,7 +45,7 @@
                                 {{-- REPLAY COURSE --}}
                                 <a href="{{ route('student.courses.lessons.show', [$course->slug, $course->lessons[0]->id]) }}"
                                     class="btn btn-outline-primary w-100 mt-2">
-                                    {{ __('Replay Course') }}
+                                    {{ __('Rever Curso') }}
                                 </a>
                             @endif
                         </div>
@@ -55,3 +55,5 @@
         @endforeach
     </div>
 </x-student.layout>
+
+<x-flash-message />

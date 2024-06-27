@@ -1,16 +1,17 @@
 <x-student.lesson-layout :course=$data[0] :lessons="$data[0]['lessons']" :percentCourseCompleted="$data[0]['percentCompleted']" :nbLessonsCompleted="$data[0]['nbLessonsCompleted']" :showCongratulations="$data[0]['showCongratulations']">
-    <div>
-        <div class="">
-            <h1 class=" fw-bold fs-1">{{ $data[0]['lesson']->title }}</h1>
-        </div>
-            @if ($data[0]['lesson']->video_path)
-                <video width="320" height="240" controls>
-                    <source src="{{ asset($data[0]['lesson']->video_path) }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            @endif
-        {!! $data[0]['lesson']->content !!}
+    <div class="">
+        <h1 class=" fw-bold fs-1">{{ $data[0]['lesson']->title }}</h1>
     </div>
+    <div class="d-flex justify-content-center">
+        @if ($data[0]['lesson']->video_path)
+            <video width="700" height="500" controls>
+                <source src="{{ asset($data[0]['lesson']->video_path) }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        @endif
+
+    </div>
+    {!! $data[0]['lesson']->content !!}
     <div class="sticky-bottom border-top py-4 text-center">
         <div class="d-flex justify-content-center align-items-center gap-3">
             @if ($data[0]['lessonCompleted'])

@@ -13,10 +13,11 @@
         <div class="collapse navbar-collapse text-center  " id="navbarNavDropdown">
             <!-- Navigation Links -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
                 @if (Route::has('login'))
                     <li class="nav-item">
                         <a href="{{ route('courses.index') }}" class="nav-link">
-                            {{ __('Courses') }}
+                            {{ __('Cursos') }}
                         </a>
                     </li>
 
@@ -28,8 +29,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('student.dashboard') }}"
-                                    class="nav-link">
+                                <a href="{{ route('student.dashboard') }}" class="nav-link">
                                     {{ __('Dashboard do Aluno') }}
                                 </a>
                             </li>
@@ -56,6 +56,7 @@
                     @endauth
 
                 @endif
+
             </ul>
             <!-- Settings Dropdown -->
             <div class="dropdown">
@@ -66,8 +67,6 @@
                     </a>
                 @endif
                 <ul class="dropdown-menu">
-
-
                     <!-- Profile Link -->
                     <li>
                         <a href="{{ route('profile.edit') }}" class="dropdown-item">
@@ -88,6 +87,7 @@
                     </li>
                 </ul>
             </div>
+
         </div>
     </div>
 </nav>

@@ -30,7 +30,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#!"
+                            <a href="{{ route('AboutUs') }}"
                                 class="link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75 fs-7">
                                 Sobre nos
                             </a>

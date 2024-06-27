@@ -25,7 +25,7 @@
                 <div class="card-body">
                     <h5 class="card-title"> {{ 'As minhas reviews' }} </h5>
                     <p class="card-text"> {{ 'Ve as reviews que deixas-te.' }} </p>
-                    <a href="#" class="btn btn-primary"> {{ ' Vêr Reviews ' }}</a>
+                    <a href="{{route('reviews.index')}}" class="btn btn-primary"> {{ ' Vêr Reviews ' }}</a>
                 </div>
             </div>
         </div>

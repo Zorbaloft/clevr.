@@ -2,12 +2,12 @@
 
 return [
   'course_level' => [
-    'B' => 'Beginner',
-    'I' => 'Intermediate',
-    'A' => 'Advanced',
+    'B' => 'Iniciante',
+    'I' => 'Intermediário',
+    'A' => 'Avançado',
   ],
   'course_status' => [
-    'E' => 'Enabled',
-    'D' => 'Disabled',
+    'E' => 'Ativar',
+    'D' => 'Desativar',
   ]
 ];

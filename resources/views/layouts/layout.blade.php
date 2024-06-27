@@ -23,10 +23,9 @@
 <body>
     <header>
         @include('layouts.navigation')
-
     </header>
 
-    <main class="mt-6">
+    <main>
         {{ $slot }}
     </main>
 

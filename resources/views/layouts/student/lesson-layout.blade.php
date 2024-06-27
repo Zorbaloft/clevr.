@@ -39,43 +39,36 @@
         </div>
     </header>
     <div class="d-flex align-items-start">
-        <nav class="nav flex-column nav-pills w-25 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="list-group">
             @foreach ($lessons as $lesson)
                 <a href="{{ route('student.courses.lessons.show', [$course->slug, $lesson->id]) }}"
-                    class="nav-link text-center border mb-3 bg-white text-decoration-none ">
-                    <button id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
-                        role="tab" aria-controls="v-pills-home" aria-selected="{{ old('lesson') == $lesson->id }}"
-                        class="btn">
-                        <div class="row align-items-center">
-                            <!-- Circle -->
-                            <div class="col-2">
-                                @if ($lesson['completed'])
-                                    <i class="bi bi-check fs-5"></i>
-                                @endif
-                            </div>
-                            <div class="col-10">
-                                <x-courses.list-lessons :lesson="$lesson" />
-                            </div>
+                    class="list-group-item  list-group-item-action border ps-5 ">
+                    <div class="row align-items-center">
+                        <div class="col-10">
+                            <x-courses.list-lessons :lesson="$lesson" />
                         </div>
-                    </button>
+                        <div class="col-2">
+                            @if ($lesson['completed'])
+                                <i class="bi bi-check fs-5"></i>
+                            @endif
+                        </div>
+                    </div>
                 </a>
+                
             @endforeach
-        </nav>
-        <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                <div class="card">
-                    <div class="w-full m-4">
-                        <div class=" bg-white shadow-lg  mx-auto rounded-xl">
-                            <div class="p-4 ">
-                                {{ $slot }}
-                            </div>
-                        </div>
+        </div>
+        <div class="card ms-3 w-100">
+            <div class="">
+                <div class=" bg-white  ">
+                    <div class="p-4 ">
+                        {{ $slot }}
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+   
 
 </body>
 

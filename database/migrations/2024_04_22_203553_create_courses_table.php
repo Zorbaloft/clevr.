@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('price');
             $table->string('level');
-            $table->enum('status', ['enabled', 'disabled'])->default('disabled');
+            $table->enum('status', ['ativar', 'desativar'])->default('desativar');
             $table->string('access')->default('Lifetime');
             $table->unsignedBigInteger('duration')->default(0);
             $table->timestamps();

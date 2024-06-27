@@ -1,8 +1,8 @@
 @if ($show)
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            Swal.fire('Congratulations ' + @js($name),
-                    'Parabéns assistis-te ás aulas todas, Não te esqueças de deixar feedback', 'success')
+            Swal.fire('Parabéns ' + @js($name),
+                    ' assistis-te ás aulas todas. Não te esqueças de deixar feedback', 'success')
                 .then((value) => {
                     if (value.isConfirmed) {
                         @if (isset($course) && is_object($course))

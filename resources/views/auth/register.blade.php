@@ -63,7 +63,7 @@
                                                             name="password_confirmation" id="password_confirmation" value=""
                                                             placeholder="Repita a Password" required for="password"
                                                             :value="__('Confirm Password')">
-                                                        <label for="password" class="form-label">Password</label>
+                                                        <label for="password" class="form-label">Confirm Password</label>
                                                         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                                                     </div>
                                                 </div>

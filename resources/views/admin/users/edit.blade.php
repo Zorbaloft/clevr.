@@ -1,7 +1,7 @@
 <x-admin.layout>
     <x-slot name="header">
         <h2 class="font-semibold text-uppercase text-secondary ">
-            {{ __('Update User') }}
+            {{ __('Atualizar Utilizador') }}
         </h2>
     </x-slot>
 

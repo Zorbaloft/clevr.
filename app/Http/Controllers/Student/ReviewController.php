@@ -63,15 +63,21 @@ class ReviewController extends Controller
     /**
      * Display a listing of the resource. 
      */
+
     public function index()
     {
         $reviews = Review::where('user_id', Auth::user()->id)->with('course')->get();
-        $course = Course::find($reviews->first()->course_id); 
+        $firstReview = $reviews->first(); // Get the first review if it exists
 
-        
+        // Initialize $course as null
+        $course = null;
+        // If there is at least one review, find the course based on the first review's course_id
+        if ($firstReview !== null) {
+            $course = Course::find($firstReview->course_id);
+        }
+
         return view('student.reviews.index', compact('reviews', 'course'));
     }
-
     /**
      * Display the specified resource.
      */

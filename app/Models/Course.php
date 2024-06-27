@@ -30,4 +30,10 @@ class Course extends Model
         $timeleft = $future - time();
         return round($timeleft / 24 / 60 / 60);
     }
+    protected $appends = ['userCount'];
+
+    public function getUserCountAttribute()
+    {
+        return $this->users()->count();
+    }
 }

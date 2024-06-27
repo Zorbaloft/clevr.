@@ -1,7 +1,7 @@
 <x-admin.layout>
     <x-slot name="header">
         <h2 class="font-semibold text-uppercase text-secondary ">
-            {{ __('Update Course') }}
+            {{ __('Atualizar Curso') }}
         </h2>
     </x-slot>
 
@@ -13,27 +13,27 @@
             @method('patch')
 
             <div class="form-group">
-                <label class="form-label" for="title">{{ __('Title') }}</label>
+                <label class="form-label" for="title">{{ __('Titulo') }}</label>
                 <input id="title" name="title" type="text" class="form-control"
                     value="{{ old('title', $course->title) }}" required autofocus autocomplete="title">
                 <x-input-error class="mt-2" :messages="$errors->get('title')" />
             </div>
 
             <div class="form-group">
-                <label class="form-label" for="description">{{ __('Description') }}</label>
+                <label class="form-label" for="description">{{ __('Descriçao') }}</label>
                 <textarea id="description" name="description" type="text" class="form-control" rows="10">{!! $course->description !!}</textarea>
                 <x-input-error class="mt-2" :messages="$errors->get('description')" />
             </div>
 
             <div class="form-group">
-                <label class="form-label" for="excerpt">{{ __('Excerpt') }}</label>
+                <label class="form-label" for="excerpt">{{ __('Excerto') }}</label>
                 <input id="excerpt" name="excerpt" type="text" class="form-control"
                     value="{{ old('excerpt', $course->excerpt) }}" required autofocus autocomplete="excerpt">
                 <x-input-error class="mt-2" :messages="$errors->get('title')" />
             </div>
 
             <div class="form-group my-2">
-                <label class="form-label" for="imagePath">{{ __('Image') }}</label>
+                <label class="form-label" for="imagePath">{{ __('Imagem') }}</label>
                 <img src="{{ asset($course->image_path) }}" alt="{{ $course->slug }}" class="w-25 img-fluid my-4">
                 <input name="imagePath" type="file" class="form-control"
                     value="{{ old('imagePath', $course->image_path) }}" @error('imagePath') is-invalid @enderror>
@@ -49,14 +49,14 @@
 
 
             <div class="form-group">
-                <label class="form-label" for="price">{{ __('Price') }}</label>
+                <label class="form-label" for="price">{{ __('Preço') }}</label>
                 <input id="price" name="price" type="text" class="form-control"
                     value="{{ old('price', $course->price) }}" required autocomplete="price">
                 <x-input-error class="mt-2" :messages="$errors->get('price')" />
             </div>
 
             <div class="form-group">
-                <label class="form-label" for="level">{{ __('Level') }}</label>
+                <label class="form-label" for="level">{{ __('Nivel') }}</label>
                 <select id="level" name="level" class=" form-select w-25">
                     @foreach ($course_levels as $course_level)
                         <option {{ strtolower($course_level) === strtolower($course->level) ? 'selected' : '' }}
@@ -95,7 +95,7 @@
         <!-- DISPLAY LESSONS TO BE UPDATED -->
         <div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
             <div class="flex flex-col items-center">
-                <h2 class="font-bold text-3xl tracking-tight">
+                <h2 class="font-bold text-3xl  mt-3">
                     Aulas
                 </h2>
             </div>
@@ -109,8 +109,8 @@
                     <thead>
                         <tr class="text-center">
                             <th class="px-4 py-2">{{ __('ID') }}</th>
-                            <th class="px-4 py-2">{{ __('Title') }}</th>
-                            <th class="px-4 py-2">{{ __('Course ID') }}</th>
+                            <th class="px-4 py-2">{{ __('Titulo') }}</th>
+                            <th class="px-4 py-2">{{ __('ID Curso') }}</th>
                             <th class="px-4 py-2">{{ __('Duration [min]') }}</th>
                             <th class="px-4 py-2">{{ __('Aula numero') }}</th>
                             <th class="px-4 py-2">{{ __('Proxima aula') }}</th>

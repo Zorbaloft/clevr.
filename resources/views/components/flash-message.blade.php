@@ -1,7 +1,7 @@
 @if (session()->has('message'))
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            Swal.fire('Pronto!', "{{ session('message') }}", 'message');
+            Swal.fire('Pronto!', "{{ session('message') }}", 'message', 'success');
         })
     </script>
 @endif

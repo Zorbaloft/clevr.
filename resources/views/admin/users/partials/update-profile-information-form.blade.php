@@ -1,7 +1,7 @@
 <section>
     <header>
         <h2 class="font-semibold text-uppercase text-secondary  text-center">
-            {{ __('A sua informação de perfil') }}
+            {{ __('Informação do perfil') }}
         </h2>
     </header>
 

@@ -8,13 +8,7 @@ class HomeController extends Controller
 {
     public function __invoke()
     {
-        $courses = Course::where('status', 'enabled')->latest()->limit(10)->get();
-
-        $courses = $courses->map(function ($course) {
-            $course->userCount = $course->users()->count();
-            return $course;
-        });
-
+        $courses = Course::where('status', 'ativar')->latest()->limit(5)->get();
         return view('welcome', [
             'courses' => $courses,
         ]);

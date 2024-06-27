@@ -16,7 +16,7 @@
                 @if (Route::has('login'))
                     <li class="nav-item">
                         <a href="{{ route('courses.index') }}" class="nav-link">
-                            {{ __('Courses') }}
+                            {{ __('Cursos') }}
                         </a>
                     </li>
 

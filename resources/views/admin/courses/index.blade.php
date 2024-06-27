@@ -1,7 +1,7 @@
 <x-admin.layout>
     <x-slot name="header">
         <h2 class="font-semibold text-uppercase text-secondary ">
-            {{ __('Courses') }}
+            {{ __('Cursos') }}
         </h2>
     </x-slot>
 
@@ -16,10 +16,10 @@
                     <thead>
                         <tr class="bg-gray text-center">
                             <th scope="col">{{ __('ID') }}</th>
-                            <th scope="col">{{ __('Title') }}</th>
+                            <th scope="col">{{ __('Titulo') }}</th>
                             <th scope="col">{{ __('Slug') }}</th>
-                            <th scope="col">{{ __('Price') }}</th>
-                            <th scope="col">{{ __('Level') }}</th>
+                            <th scope="col">{{ __('Preço') }}</th>
+                            <th scope="col">{{ __('Nivel') }}</th>
                             <th scope="col">{{ __('Status') }}</th>
 
                             <th scope="col">{{ __('Duration [min]') }}</th>
@@ -40,7 +40,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                <div class="m-8">
+                <div class="m-5">
                     {{ $courses->links() }}
                 </div>
             </div>

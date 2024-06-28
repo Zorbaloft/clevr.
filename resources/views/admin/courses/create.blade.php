@@ -13,11 +13,7 @@
             class=" container mx-auto ">
             @csrf
             <div class="form-group">
-<<<<<<< HEAD
-                <label class="form-label" for="title">{{ __('Titulo') }}</label>
-=======
                 <label class="form-label" for="title">{{ __('Título') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <input id="title" name="title" type="text" class="form-control" required autofocus
                     autocomplete="title" />
                 <x-input-error class="mt-2" :messages="$errors->get('title')" />
@@ -25,11 +21,7 @@
             </div>
 
             <div class="form-group">
-<<<<<<< HEAD
-                <label class="form-label" for="description">{{ __('Descricao') }}</label>
-=======
                 <label class="form-label" for="description">{{ __('Descrição') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <textarea id="description" name="description" rows="10" class="form-control"></textarea>
                 <x-input-error class="mt-2" :messages="$errors->get('description')" />
             </div>
@@ -62,11 +54,7 @@
             </div>
 
             <div class="form-group">
-<<<<<<< HEAD
-                <label for="level" class="form-label">{{ __('Nivel') }}</label>
-=======
                 <label for="level" class="form-label">{{ __('Nível') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <select id="level" name="level" class="form-control mt-1">
                     @foreach ($course_levels as $course_level)
                         <option value="{{ $course_level }}">{{ $course_level }}</option>

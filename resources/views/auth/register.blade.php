@@ -22,11 +22,7 @@
                                                                 width="150" height="150">
                                                         </a>
                                                     </div>
-<<<<<<< HEAD
-                                                    <h2 class="h4 text-center">Registro</h2>
-=======
                                                     <h2 class="h4 text-center">Registo</h2>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                                 </div>
                                             </div>
                                         </div>
@@ -67,11 +63,7 @@
                                                             name="password_confirmation" id="password_confirmation" value=""
                                                             placeholder="Repita a Password" required for="password"
                                                             :value="__('Confirm Password')">
-<<<<<<< HEAD
-                                                        <label for="password" class="form-label">Confirm Password</label>
-=======
                                                         <label for="password" class="form-label">Confirma a Password</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                                         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                                                     </div>
                                                 </div>
@@ -80,39 +72,22 @@
                                                         <input class="form-check-input" type="checkbox" value=""
                                                             name="iAgree" id="iAgree" required>
                                                         <label class="form-check-label text-secondary" for="iAgree">
-<<<<<<< HEAD
-                                                            I agree to the <a href="#!"
-                                                                class="link-primary text-decoration-none">terms and
-                                                                conditions</a>
-=======
                                                             Eu concordo com os <a href="#!"
                                                                 class="link-primary text-decoration-none">termos e condições.</a>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                                         </label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="d-grid">
-<<<<<<< HEAD
-                                                        <button class="btn btn-dark btn-lg" type="submit">Sign
-                                                            up</button>
-=======
                                                         <button class="btn btn-dark btn-lg" type="submit">Registo</button>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
                                         <div class="row">
                                             <div class="col-12">
-<<<<<<< HEAD
-                                                <p class="mb-0 mt-5 text-secondary text-center">Already have an
-                                                    account? <a href="{{ route('login') }}"
-                                                        class="link-primary text-decoration-none">Sign in</a></p>
-=======
                                                 <p class="mb-0 mt-5 text-secondary text-center">Já tens conta? <a href="{{ route('login') }}"
                                                         class="link-primary text-decoration-none">Iniciar Sessão</a></p>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                             </div>
                                         </div>
                                     </div>

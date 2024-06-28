@@ -24,11 +24,7 @@
                 <li class="nav-item">
                     <a href="{{ route('admin.enrollments') }}"
                         class="nav-link {{ Route::is('admin.enrollments') ? 'active' : '' }}">
-<<<<<<< HEAD
-                        {{ __('Inscricoes') }}
-=======
                         {{ __('Inscricões') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                     </a>
                 </li>
 
@@ -50,11 +46,7 @@
                     <!-- Profile Link -->
                     <li>
                         <a href="{{ route('profile.edit') }}" class="dropdown-item">
-<<<<<<< HEAD
-                            {{ __('Profile') }}
-=======
                             {{ __('Perfil') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                         </a>
                     </li>
                     <!-- Authentication -->
@@ -65,11 +57,7 @@
                             <a :href="route('logout')" class="dropdown-item"
                                 onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-<<<<<<< HEAD
-                                {{ __('Log Out') }}
-=======
                                 {{ __('Sair') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                             </a>
                         </form>
                     </li>

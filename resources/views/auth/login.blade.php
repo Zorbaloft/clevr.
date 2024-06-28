@@ -21,11 +21,7 @@
                                                                 alt="" width="150" height="150">
                                                         </a>
                                                     </div>
-<<<<<<< HEAD
-                                                    <h2 class="h4 text-center">Faça o Login</h2>
-=======
                                                     <h2 class="h4 text-center">Inicie a sua sessão</h2>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                                     
                                                 </div>
                                             </div>
@@ -57,11 +53,7 @@
                                                             <input class="form-check-input" type="checkbox" value=""
                                                                 name="rememberMe" id="rememberMe">
                                                             <label class="form-check-label text-secondary" for="rememberMe">
-<<<<<<< HEAD
-                                                               Mantenha-me Logado
-=======
                                                                Manter-me Logado
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                                             </label>
                                                         </div>
                                                         @if (Route::has('password.request'))
@@ -73,15 +65,6 @@
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="d-grid my-3">
-<<<<<<< HEAD
-                                                        <button class="btn btn-primary btn-lg" type="submit">Log in</button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p class="m-0 text-secondary text-center">Nao tem conta? <a
-                                                            href="{{ route('register') }}"
-                                                            class="link-primary text-decoration-none">Sign up</a></p>
-=======
                                                         <button class="btn btn-primary btn-lg" type="submit">Iniciar Sessão</button>
                                                     </div>
                                                 </div>
@@ -89,7 +72,6 @@
                                                     <p class="m-0 text-secondary text-center">Não tens conta? <a
                                                             href="{{ route('register') }}"
                                                             class="link-primary text-decoration-none">Regista-te</a></p>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                                 </div>
                                             </div>
                                         </form>

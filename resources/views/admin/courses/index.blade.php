@@ -16,15 +16,6 @@
                     <thead>
                         <tr class="bg-gray text-center">
                             <th scope="col">{{ __('ID') }}</th>
-<<<<<<< HEAD
-                            <th scope="col">{{ __('Titulo') }}</th>
-                            <th scope="col">{{ __('Slug') }}</th>
-                            <th scope="col">{{ __('Preço') }}</th>
-                            <th scope="col">{{ __('Nivel') }}</th>
-                            <th scope="col">{{ __('Status') }}</th>
-
-                            <th scope="col">{{ __('Duration [min]') }}</th>
-=======
                             <th scope="col">{{ __('Título') }}</th>
                             <th scope="col">{{ __('Slogan') }}</th>
                             <th scope="col">{{ __('Preço [€]') }}</th>
@@ -32,7 +23,6 @@
                             <th scope="col">{{ __('Status') }}</th>
 
                             <th scope="col">{{ __('Duração [min]') }}</th>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                         </tr>
                     </thead>
                     <tbody>

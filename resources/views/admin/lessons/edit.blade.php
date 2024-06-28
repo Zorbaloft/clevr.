@@ -28,21 +28,13 @@
         </div>
 
         <div class="form-group">
-<<<<<<< HEAD
-            <label for="video" class="form-label">{{ __('Video:') }}</label>
-=======
             <label for="video" class="form-label">{{ __('Vídeo:') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <input id="video" name="video" type="file" class="form-control mt-1" accept="video/mp4">
             <x-input-error class="mt-2" :messages="$errors->get('video')" />
         </div>
 
         <div class="form-group">
-<<<<<<< HEAD
-            <label class="form-label" for="content">{{ __('Conteudo') }}</label>
-=======
             <label class="form-label" for="content">{{ __('Conteúdo') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <textarea id="content" name="content" rows="10" class="form-control" required autofocus autocomplete="title">{!! $lesson->content !!}</textarea>
             <x-input-error class="mt-2" :messages="$errors->get('content')" />
         </div>
@@ -66,11 +58,7 @@
         <div class="form-group">
 
 
-<<<<<<< HEAD
-            <label class="form-label" for="next_lesson">{{ __('Proxima aula') }}</label>
-=======
             <label class="form-label" for="next_lesson">{{ __('Próxima aula') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <input id="next_lesson" name="next_lesson" type="text" class="form-control"
                 value="{{ old('next_lesson', $lesson->next_lesson) }}" autocomplete="next_lesson">
             <x-input-error class="mt-2" :messages="$errors->get('next_lesson')" />

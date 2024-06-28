@@ -1,10 +1,6 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmUserDeletionModal">
-<<<<<<< HEAD
-    {{ __('Delete Account') }}
-=======
     {{ __('Apagar conta') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
 </button>
 
 <!-- Modal -->
@@ -29,11 +25,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('Cancel') }}</button>
-<<<<<<< HEAD
-                <button type="submit" class="btn btn-danger">{{ __('Delete Account') }}</button>
-=======
                 <button type="submit" class="btn btn-danger">{{ __('Apagar conta') }}</button>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             </div>
                 </form>
         </div>

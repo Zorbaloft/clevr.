@@ -43,21 +43,13 @@
                     @else
                         <li class="nav-item">
                             <a href="{{ route('login') }}" class="nav-link">
-<<<<<<< HEAD
-                                {{ __('Log in') }}
-=======
                                 {{ __('Iniciar Sessão') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                             </a>
                         </li>
                         @if (Route::has('register'))
                             <li class="nav-item">
                                 <a href="{{ route('register') }}" class="nav-link">
-<<<<<<< HEAD
-                                    {{ __('Register') }}
-=======
                                     {{ __('Registo') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                 </a>
                             </li>
                         @endif
@@ -78,11 +70,7 @@
                     <!-- Profile Link -->
                     <li>
                         <a href="{{ route('profile.edit') }}" class="dropdown-item">
-<<<<<<< HEAD
-                            {{ __('Profile') }}
-=======
                             {{ __('Perfil') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                         </a>
                     </li>
                     <!-- Authentication -->
@@ -93,11 +81,7 @@
                             <a :href="route('logout')" class="dropdown-item"
                                 onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-<<<<<<< HEAD
-                                {{ __('Log Out') }}
-=======
                                 {{ __('Sair') }}
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                             </a>
                         </form>
                     </li>

@@ -16,11 +16,7 @@
             {{ $course->duration }} min <i class="bi bi-clock pr-2"></i>
         </div>
         <div>
-<<<<<<< HEAD
-            <span  class="text-decoration-none">Preço: {{ $course->price }} $</span>
-=======
             <span  class="text-decoration-none">Preço: {{ $course->price }} €</span>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
         </div>
     </div>
     

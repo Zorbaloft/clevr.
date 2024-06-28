@@ -20,11 +20,7 @@
             </div>
 
             <div class="form-group">
-<<<<<<< HEAD
-                <label class="form-label" for="description">{{ __('Descriçao') }}</label>
-=======
                 <label class="form-label" for="description">{{ __('Descrição') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <textarea id="description" name="description" type="text" class="form-control" rows="10">{!! $course->description !!}</textarea>
                 <x-input-error class="mt-2" :messages="$errors->get('description')" />
             </div>
@@ -60,11 +56,7 @@
             </div>
 
             <div class="form-group">
-<<<<<<< HEAD
-                <label class="form-label" for="level">{{ __('Nivel') }}</label>
-=======
                 <label class="form-label" for="level">{{ __('Nível') }}</label>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <select id="level" name="level" class=" form-select w-25">
                     @foreach ($course_levels as $course_level)
                         <option {{ strtolower($course_level) === strtolower($course->level) ? 'selected' : '' }}
@@ -117,19 +109,11 @@
                     <thead>
                         <tr class="text-center">
                             <th class="px-4 py-2">{{ __('ID') }}</th>
-<<<<<<< HEAD
-                            <th class="px-4 py-2">{{ __('Titulo') }}</th>
-                            <th class="px-4 py-2">{{ __('ID Curso') }}</th>
-                            <th class="px-4 py-2">{{ __('Duration [min]') }}</th>
-                            <th class="px-4 py-2">{{ __('Aula numero') }}</th>
-                            <th class="px-4 py-2">{{ __('Proxima aula') }}</th>
-=======
                             <th class="px-4 py-2">{{ __('Título') }}</th>
                             <th class="px-4 py-2">{{ __('ID do Curso') }}</th>
                             <th class="px-4 py-2">{{ __('Duração [min]') }}</th>
                             <th class="px-4 py-2">{{ __('Número da Aula') }}</th>
                             <th class="px-4 py-2">{{ __('Próxima aula') }}</th>
->>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                         </tr>
                     </thead>
                     <tbody>

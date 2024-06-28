@@ -139,7 +139,7 @@ class CourseController extends Controller
 
         $course->save();
 
-        return Redirect::route('admin.courses')->with('message', 'Course updated successfully');
+        return Redirect::route('admin.courses')->with('message', 'Curso atualizado com sucesso');
     }
 
     /**

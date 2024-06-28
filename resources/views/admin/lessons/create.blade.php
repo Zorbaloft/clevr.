@@ -15,7 +15,11 @@
         @csrf
 
         <div class="form-group">
+<<<<<<< HEAD
             <label for="title" class="form-label">{{ __('Titulo:') }}</label>
+=======
+            <label for="title" class="form-label">{{ __('Título:') }}</label>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <input id="title" name="title" type="text" class="form-control mt-1" required autofocus
                 autocomplete="title" />
             <x-input-error class="mt-2" :messages="$errors->get('title')" />
@@ -33,20 +37,32 @@
         </div>
 
         <div class="form-group">
+<<<<<<< HEAD
             <label for="content" class="form-label">{{ __('Conteudo:') }}</label>
+=======
+            <label for="content" class="form-label">{{ __('Conteúdo:') }}</label>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <textarea id="content" name="content" rows="10" class="form-control mt-1"></textarea>
             <x-input-error class="mt-2" :messages="$errors->get('content')" />
         </div>
 
         <div>
+<<<<<<< HEAD
             <label for="courseId" class="form-label">{{ __('Id do Curso:') }} </label>
+=======
+            <label for="courseId" class="form-label">{{ __('ID do Curso:') }} </label>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <input id="courseId" name="courseId" type="text" class="form-control mt-1"
                 value="{{ old('courseId', $course->id) }}" autocomplete="courseId" />
             <x-input-error class="mt-2" :messages="$errors->get('courseId')" />
         </div>
 
         <div class="form-group">
+<<<<<<< HEAD
             <label for="duration" class="form-label">{{ __('Duracao da Aula') }}</label>
+=======
+            <label for="duration" class="form-label">{{ __('Duração da Aula') }}</label>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <input id="duration" name="duration" type="text" class="form-control mt-1" required autofocus
                 autocomplete="duration" />
             <x-input-error class="mt-2" :messages="$errors->get('duration')" />

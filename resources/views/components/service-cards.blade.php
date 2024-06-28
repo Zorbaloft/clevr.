@@ -4,7 +4,11 @@
             <div class=" justify-content-md-center">
 
                 <hr class="w-50 mx-auto border-dark-subtle">
+<<<<<<< HEAD
                 <h3 class="mb-1 mt-3 fs-3 lh-base fw-bold text-center">Que tipo de serviços temos? </h3>
+=======
+                <h3 class="mb-1 mt-3 fs-3 lh-base fw-bold text-center">Que tipo de serviços temos no Clevr? </h3>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <hr class="w-50 mx-auto mb-3 mb-xl-9 border-dark-subtle">
             </div>
             <div class="container bg-light border mb-5 ">
@@ -26,7 +30,11 @@
                                 <i class="fs-1 bi bi-rocket"></i>
                                 <h4 class="fw-bold text-uppercase mb-4">Conteúdo Atualizado</h4>
                                 <p class="mb-4 ">Garantimos que os cursos têm as informações mais relevantes nas suas
+<<<<<<< HEAD
                                     áreas de estudo .</p>
+=======
+                                    áreas de estudo.</p>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
 
                             </div>
                         </div>
@@ -38,7 +46,11 @@
                                 <h4 class="fw-bold text-uppercase mb-4">Aulas exclusivas</h4>
                                 <p class="mb-4 ">Com o objetivo de aproximar os próprios professores dos alunos o nosso
                                     objetivo é fazer desta plantaforma um meio de aprendizagem único onde os teus
+<<<<<<< HEAD
                                     própios professores te possam dar aulas extra .</p>
+=======
+                                    própios professores te possam dar aulas extra.</p>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
 
                             </div>
                         </div>

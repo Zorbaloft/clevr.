@@ -2,7 +2,11 @@
     {{-- heading --}}
     <div class="container-fluid bg-white">
         <div class="">
+<<<<<<< HEAD
             <h2 class="fs-1">{{ __('Os meus settings') }}</h2>
+=======
+            <h2 class="fs-1">{{ __('Definições') }}</h2>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
         </div>
     </div>
     {{-- main --}}

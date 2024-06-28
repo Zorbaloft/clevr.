@@ -26,13 +26,21 @@
                         <li>
                             <a href="#!"
                                 class="link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75 fs-7">
+<<<<<<< HEAD
                                 Politicas
+=======
+                                Políticas
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('AboutUs') }}"
                                 class="link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75 fs-7">
+<<<<<<< HEAD
                                 Sobre nos
+=======
+                                Sobre nós
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                             </a>
                         </li>
                     </ul>
@@ -46,7 +54,11 @@
         <div class="row gy-3 gy-sm-0 align-items-sm-center">
             <div class="col-sm-6">
                 <div class="copyright-wrapper d-block mb-1 fs-9 text-center text-sm-start">
+<<<<<<< HEAD
                     &copy; 2024. All Rights Reserved.
+=======
+                    &copy; 2024. Todos os direitos reservados.
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 </div>
                 <div class="credit-wrapper d-block text-secondary fs-10 text-center text-sm-start">
                     Built by<a href="https://bootstrapbrain.com/" class="link-secondary text-decoration-none">

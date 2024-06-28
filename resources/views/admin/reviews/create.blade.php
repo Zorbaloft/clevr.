@@ -13,7 +13,11 @@
             @csrf
             <!-- Title -->
             <div>
+<<<<<<< HEAD
                 <label class="form-label" for="title">{{ __('Titulo') }}</label>
+=======
+                <label class="form-label" for="title">{{ __('Título') }}</label>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <input id="title" name="title" type="text" class="form-control" required autofocus
                     autocomplete="title">
                 <x-input-error class="mt-2" :messages="$errors->get('title')" />
@@ -21,7 +25,11 @@
             </div>
             <!-- Content -->
             <div>
+<<<<<<< HEAD
                 <label class="form-label" for="content">{{ __('Content') }}</label>
+=======
+                <label class="form-label" for="content">{{ __('Conteúdo') }}</label>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                 <textarea id="content" name="content" type="text" rows="4" class="form-control" required autofocus
                     autocomplete="name"></textarea>
                 <x-input-error class="mt-2" :messages="$errors->get('title')" />

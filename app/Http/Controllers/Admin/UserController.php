@@ -128,7 +128,7 @@ class UserController extends Controller
         }
         
 
-        return Redirect::route('admin.users')->with('message', 'User updated successfully');
+        return Redirect::route('admin.users')->with('message', 'Estudante atualizado com sucesso');
     }
 
     /**

@@ -18,7 +18,11 @@
         @method('patch')
 
         <div>
+<<<<<<< HEAD
             <label class="form-label" for="name"> {{ __('Name') }}</label>
+=======
+            <label class="form-label" for="name"> {{ __('Nome') }}</label>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
             <input id="name" name="name" type="text" class="form-control"
                 value="{{ old('name', $user->name) }}" required autofocus autocomplete="name" />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />

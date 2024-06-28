@@ -129,7 +129,7 @@ class ReviewController extends Controller
         $review->rating = $request->rating;
         $review->save();
 
-        return Redirect::route('student.dashboard')->with('message', 'Review updated successfully');
+        return Redirect::route('student.dashboard')->with('message', 'Review atualizada com sucesso');
     }
 
     /**

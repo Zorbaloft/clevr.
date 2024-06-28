@@ -18,7 +18,11 @@
                     <h1 class="display-4 fw-bold lh-base">E começa com
                         o curso ainda hoje</h1>
 
+<<<<<<< HEAD
                     <p class="lead ">Estamos excitados em ter-te connosco.</p>
+=======
+                    <p class="lead ">Estamos contentes em ter-te connosco!</p>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                     <a href="{{ route('direct.purchase', $course->slug) }}" class="btn btn-primary">Comprar Agora</a>
                 </div>
             </div>

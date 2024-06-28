@@ -26,7 +26,11 @@
                 </div>
                 <div class="col">
                     <p class="fw-bold">Detalhes de pagamento</p>
+<<<<<<< HEAD
                     <p class=" mb-3">Completa a tua compra fornecendo os teus dados de Pagamento</p>
+=======
+                    <p class=" mb-3">Completa a tua compra fornecendo os teus dados de Pagamento.</p>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
 
                     <form action="{{ route('checkout.complete') }}" method="POST">
                         @csrf
@@ -35,11 +39,19 @@
                             <input class="form-control  shadow-none" type="email" value="{{ auth()->user()->email }}">
                         </div>
                         <div class="my-3 ">
+<<<<<<< HEAD
                             <p class=" fw-bold mb-2">Nome do titular do cartao:</p>
                             <input class="form-control shadow-none" type="text">
                         </div>
                         <div>
                             <p class=" fw-bold mb-2">Informaçao do cartao:</p>
+=======
+                            <p class=" fw-bold mb-2">Nome do titular do cartão:</p>
+                            <input class="form-control shadow-none" type="text">
+                        </div>
+                        <div>
+                            <p class=" fw-bold mb-2">Informaçao do cartão:</p>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                             <div class="border rounded d-flex align-items-center justify-content-between">
                                 <label for="cardDetails" class="visually-hidden">Card Number</label>
                                 <input type="text" id="cardDetails" class="form-control shadow-none"
@@ -60,7 +72,11 @@
                             </div>
 
                             <div class="address">
+<<<<<<< HEAD
                                 <p class=" fw-bold mb-3">Endereço de Faturaçao:</p>
+=======
+                                <p class=" fw-bold mb-3">Endereço de Faturação:</p>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                 <select class="form-select shadow-none mb-2" aria-label="Default select example">
                                     <option value="aveiro">Aveiro</option>
                                     <option value="beja">Beja</option>
@@ -83,7 +99,11 @@
                                 </select>
                                 <div class="d-flex">
                                     <input class="form-control shadow-none zip" type="text"
+<<<<<<< HEAD
                                         placeholder="Codigo Postal">
+=======
+                                        placeholder="Código Postal">
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                     <input class="form-control shadow-none state" type="text" placeholder="Cidade">
                                 </div>
                                 <div class="d-flex flex-column ">
@@ -92,11 +112,19 @@
                                         <p> {{ $courseDetails['price'] }} €</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mb-2">
+<<<<<<< HEAD
                                         <p>Taxa<span>(5%)</span></p>
                                         <p>{{ number_format($tax, 2) }} €</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between mb-2">
                                         <p class="fw-bold">Total (Com Taxa)</p>
+=======
+                                        <p>Taxa<span> (5%)</span></p>
+                                        <p>{{ number_format($tax, 2) }} €</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <p class="fw-bold">Total </p>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                         <strong>{{ number_format($total, 2) }} €</strong>
                                     </div>
                                     <button type="submit" class="btn btn-primary mt-2">Pagar

@@ -4,7 +4,7 @@
             <div class="col-12 col-md-10 col-lg-8">
                 <h3 class="fs-5 mb-2 text-secondary text-uppercase">Sobre</h3>
                 <h2 class="display-5 mb-4">No nosso núcleo, priorizamos a expansão de limites, abraçando o desconhecido e
-                    promovendo uma cultura de aprendizado contínuo.</h2>
+                    promovendo uma cultura de aprendizagem contínua.</h2>
                 <button type="button" class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5">Connect Now</button>
             </div>
         </div>

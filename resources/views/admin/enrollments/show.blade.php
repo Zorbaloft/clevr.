@@ -15,7 +15,11 @@
                             <th class="px-4 py-2">{{ __('Curso') }}</th>
                             <th class="px-4 py-2">{{ __('Completado') }}</th>
                             <th class="px-4 py-2">{{ __('Inscrito a') }}</th>
+<<<<<<< HEAD
                             <th class="px-4 py-2">{{ __('data de expiração') }}</th>
+=======
+                            <th class="px-4 py-2">{{ __('Data de expiração') }}</th>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                         </tr>
                     </thead>
                     <tbody>

@@ -20,10 +20,17 @@
                     <thead>
                         <tr class="">
                             <th scope="col" class="px-4 py-2">{{ __('ID') }}</th>
+<<<<<<< HEAD
                             <th scope="col" class="px-4 py-2">{{ __('Name') }}</th>
                             <th scope="col" class="px-4 py-2">{{ __('Email') }}</th>
                             <th scope="col" class="px-4 py-2">{{ __('Role') }}</th>
                             <th scope="col" class="px-4 py-2">{{ __('Enrollments') }}</th>
+=======
+                            <th scope="col" class="px-4 py-2">{{ __('Nome') }}</th>
+                            <th scope="col" class="px-4 py-2">{{ __('Email') }}</th>
+                            <th scope="col" class="px-4 py-2">{{ __('Cargo') }}</th>
+                            <th scope="col" class="px-4 py-2">{{ __('Nº de Cursos') }}</th>
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                             <th scope="col" class="px-4 py-2">{{ __('Status') }}</th>
                         </tr>
                     </thead>
@@ -35,7 +42,11 @@
                                 <td class="border px-4 py-2">{{ $user->name }}</td>
                                 <td class="border px-4 py-2">{{ $user->email }}</td>
                                 <td class="border px-4 py-2">
+<<<<<<< HEAD
                                     {{ $user->is_admin ? 'Admin' : 'Student' }}
+=======
+                                    {{ $user->is_admin ? 'Admin' : 'Estudante' }}
+>>>>>>> 0a4dcae14fae8d74d1e1752f9367d63a0594eb1f
                                 </td>
                                 <td class="border px-4 py-2 hover:text-red"><a
                                         href="{{ route('admin.enrollments.show', $user->id) }}"

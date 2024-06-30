@@ -12,7 +12,7 @@
             <div class="col">
                 <div class="card shadow-lg">
                     @if (count($course->lessons) > 0)
-                        <a href="{{ route('student.courses.lessons.show', [$course->slug, $course->lessons[0]->id]) }}"
+                        <a href="{{ route('student.courses.lessons.show', [$course->slug, $course->lessons[0]->order]) }}"
                             class="text-decoration-none text-dark">
                             <img src="{{ asset($course->image_path) }}" alt="Course image thumbnail."
                                 class="card-img-top" />

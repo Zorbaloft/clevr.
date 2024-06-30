@@ -15,7 +15,7 @@
     <div class="sticky-bottom border-top py-4 text-center">
         <div class="d-flex justify-content-center align-items-center gap-3">
             @if ($data[0]['lessonCompleted'])
-                <form action="{{ route('student.courses.lessons.show', [$data[0]->slug, $data[0]['lesson']->id]) }}">
+                <form action="{{ route('student.courses.lessons.show', [$data[0]->slug, $data[0]['lesson']->order]) }}">
                     <button type="submit" class="btn btn-outline-primary" name="action" value="mark_incomplete">
                         {{ __('Marcar Incompleto') }}
                     </button>

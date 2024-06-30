@@ -5,21 +5,22 @@ namespace App\Http\Controllers\Student;
 use App\Http\Controllers\Controller;
 use App\Models\Course;
 use App\Models\Lesson;
-use App\Models\Review;
 use Illuminate\Support\Facades\Auth;
 
 class LessonController extends Controller
 {
-  public function show(string $courseSlug, string $id)
+  public function show(string $courseSlug, int $lessonOrder)
   {
     $course = Course::where('slug', $courseSlug)->first();
 
-    $lessons = $course->lessons()->getResults();
-    $lessons = $course->lessons()->orderBy('id', 'asc')->get();
-    $lesson = $lessons->find($id);
-
+    $lessons = $course->lessons()->orderBy('order', 'asc')->get();
+    $lesson = $lessons->where('order', $lessonOrder)->first();
+  
+    if (!$lesson) {
+      abort(404); // Lesson not found
+    }
+  
     $this->authorize('view', $lesson);
-
     // Explode to have reference to previous lesson when it is the action "complete_and_continue"
     // ?action=complete_and_continue%2C+31
     // It will pass the actual action performed and the ID of the previous lesson to update the pivot 

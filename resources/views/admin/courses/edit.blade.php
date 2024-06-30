@@ -108,11 +108,11 @@
                 <table class="table table-hover">
                     <thead>
                         <tr class="text-center">
-                            <th class="px-4 py-2">{{ __('ID') }}</th>
+                            {{-- <th class="px-4 py-2">{{ __('ID') }}</th> --}}
+                            <th class="px-4 py-2">{{ __('Aula Número') }}</th>
                             <th class="px-4 py-2">{{ __('Título') }}</th>
-                            <th class="px-4 py-2">{{ __('ID do Curso') }}</th>
+                            {{-- <th class="px-4 py-2">{{ __('ID do Curso') }}</th> --}}
                             <th class="px-4 py-2">{{ __('Duração [min]') }}</th>
-                            <th class="px-4 py-2">{{ __('Número da Aula') }}</th>
                             <th class="px-4 py-2">{{ __('Próxima aula') }}</th>
                         </tr>
                     </thead>
@@ -120,11 +120,11 @@
                         @foreach ($lessons as $lesson)
                             <tr class="text-center"
                                 onclick="window.location='{{ route('admin.courses.lessons.edit', [$course->slug, $lesson->id]) }}';">
-                                <td class="px-4 py-2">{{ $lesson->id }}</td>
-                                <td class="px-4 py-2">{{ $lesson->title }}</td>
-                                <td class="px-4 py-2">{{ $lesson->course_id }}</td>
-                                <td class="px-4 py-2">{{ $lesson->duration }}</td>
+                                {{-- <td class="px-4 py-2">{{ $lesson->id }}</td> --}}
                                 <td class="px-4 py-2">{{ $lesson->order }}</td>
+                                <td class="px-4 py-2">{{ $lesson->title }}</td>
+                                {{-- <td class="px-4 py-2">{{ $lesson->course_id }}</td> --}}
+                                <td class="px-4 py-2">{{ $lesson->duration }}</td>
                                 <td class="px-4 py-2">{{ $lesson->next_lesson }}</td>
                             </tr>
                         @endforeach

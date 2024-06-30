@@ -31,7 +31,7 @@
             <!-- Password -->
             <div class="mt-4">
                 <label class="form-label" for="password">{{ 'Password' }}</label>
-                <input id="password" class="from-control" type="password" name="password" required
+                <input id="password" class="form-control" type="password" name="password" required
                     autocomplete="new-password" />
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
             </div>

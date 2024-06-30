@@ -17,6 +17,7 @@ class LessonSeeder extends Seeder
             \App\Models\Lesson::factory()->create([
                 'course_id' => 1,
                 'order' => $i, // Set the 'order' field
+                
             ]);
             $i++;
         }

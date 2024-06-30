@@ -44,13 +44,18 @@ class LessonController extends Controller
         $lesson->order = $request->order;
 
         if ($request->hasFile('video')) {
-            $fileName = 'thumbnail.' . $request->video->extension();
+            // Use time() or a unique ID to ensure the file name is unique
+            $fileName = time() . '.' . $request->video->extension();
+            // Assuming $request->slug is the course slug, keep using it to categorize videos by course
             $folderPath = public_path('/videos/courses/' . $request->slug);
+            // Ensure the directory exists
+            if (!file_exists($folderPath)) {
+                mkdir($folderPath, 0777, true);
+            }
             $request->video->move($folderPath, $fileName);
+            // Set the video_path to the new, unique path
             $lesson->video_path = '/videos/courses/' . $request->slug . DIRECTORY_SEPARATOR . $fileName;
         }
-      
-
 
         $lesson->save();
 
@@ -119,9 +124,16 @@ class LessonController extends Controller
         $lesson->order = $request->order;
 
         if ($request->hasFile('video')) {
-            $fileName = $request->slug . '.' . $request->video->extension();
+            // Use time() or a unique ID to ensure the file name is unique
+            $fileName = time() . '.' . $request->video->extension();
+            // Assuming $request->slug is the course slug, keep using it to categorize videos by course
             $folderPath = public_path('/videos/courses/' . $request->slug);
+            // Ensure the directory exists
+            if (!file_exists($folderPath)) {
+                mkdir($folderPath, 0777, true);
+            }
             $request->video->move($folderPath, $fileName);
+            // Set the video_path to the new, unique path
             $lesson->video_path = '/videos/courses/' . $request->slug . DIRECTORY_SEPARATOR . $fileName;
         }
 

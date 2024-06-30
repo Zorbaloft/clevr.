@@ -29,7 +29,7 @@
 
         <div class="form-group">
             <label for="video" class="form-label">{{ __('Vídeo:') }}</label>
-            <input id="video" name="video" type="file" class="form-control mt-1" accept="video/mp4">
+            <input id="video" name="video" type="file" class="form-control mt-1" accept="video/mp4" >
             <x-input-error class="mt-2" :messages="$errors->get('video')" />
         </div>
 

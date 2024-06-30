@@ -41,7 +41,7 @@
     <div class="d-flex align-items-start">
         <div class="list-group">
             @foreach ($lessons as $lesson)
-                <a href="{{ route('student.courses.lessons.show', [$course->slug, $lesson->id]) }}"
+                <a href="{{ route('student.courses.lessons.show', [$course->slug, $lesson->order]) }}"
                     class="list-group-item  list-group-item-action border ps-5 ">
                     <div class="row align-items-center">
                         <div class="col-10">

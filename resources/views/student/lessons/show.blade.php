@@ -4,7 +4,7 @@
     </div>
     <div class="d-flex justify-content-center">
         @if ($data[0]['lesson']->video_path)
-            <video width="700" height="500" controls>
+            <video width="100%" height="auto" controls>
                 <source src="{{ asset($data[0]['lesson']->video_path) }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>

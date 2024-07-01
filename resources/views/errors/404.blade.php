@@ -50,10 +50,10 @@
         <div class="box__description">
           <div class="box__description-container">
             <div class="box__description-title">Whoops!</div>
-            <div class="box__description-text">It seems like we couldn't find the page you were looking for</div>
+            <div class="box__description-text">Página não encontrada!</div>
           </div>
           
-          <a href="{{ route('home') }}"  class="box__button">Go back</a>   {{-- ????? --}}
+          <a href="{{ route('home') }}"  class="box__button">Sair</a>   
           
         </div>
         

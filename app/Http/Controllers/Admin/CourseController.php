@@ -81,7 +81,7 @@ class CourseController extends Controller
 
         $course->save();
 
-        return Redirect::route('admin.courses')->with('message', 'Course created successfully');
+        return Redirect::route('admin.courses')->with('message', 'Curso Criado Com Sucesso');
     }
 
     /**
@@ -160,6 +160,6 @@ class CourseController extends Controller
             File::deleteDirectory($folderPath);
         }
 
-        return Redirect::route('admin.courses')->with('message', 'Course deleted successfully');
+        return Redirect::route('admin.courses')->with('message', 'Curso excluído com sucesso');
     }
 }

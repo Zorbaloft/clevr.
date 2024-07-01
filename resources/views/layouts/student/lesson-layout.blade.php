@@ -38,32 +38,27 @@
             </div>
         </div>
     </header>
-    <div class="d-flex align-items-start">
-        <div class="list-group">
+    <div class="d-flex flex-column flex-lg-row align-items-start">
+        <div class="list-group flex-grow-1">
             @foreach ($lessons as $lesson)
                 <a href="{{ route('student.courses.lessons.show', [$course->slug, $lesson->order]) }}"
-                    class="list-group-item  list-group-item-action border ps-5 ">
+                    class="list-group-item list-group-item-action border ps-3 ps-md-5">
                     <div class="row align-items-center">
-                        <div class="col-10">
+                        <div class="col-12 col-md-10">
                             <x-courses.list-lessons :lesson="$lesson" />
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-md-2 text-center text-md-end">
                             @if ($lesson['completed'])
                                 <i class="bi bi-check fs-5"></i>
                             @endif
                         </div>
                     </div>
                 </a>
-                
             @endforeach
         </div>
-        <div class="card ms-3 w-100">
-            <div class="">
-                <div class=" bg-white  ">
-                    <div class="p-4 ">
-                        {{ $slot }}
-                    </div>
-                </div>
+        <div class="card ms-3 mt-3 mt-lg-0 w-100">
+            <div class="card-body">
+                {{ $slot }}
             </div>
         </div>
     </div>

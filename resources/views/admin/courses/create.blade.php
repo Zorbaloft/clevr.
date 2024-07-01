@@ -49,7 +49,7 @@
             <div class="form-group">
                 <label for="price" class="form-label">{{ __('Preço') }}</label>
                 <input id="price" name="price" type="text" class="form-control mt-1" required
-                    autocomplete="price" />
+                    autocomplete="price" oninput="validateNumericInput(event)" />
                 <x-input-error class="mt-2" :messages="$errors->get('Preço')" />
             </div>
 

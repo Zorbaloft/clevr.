@@ -34,7 +34,7 @@
                 </form>
             @else
                 <form
-                    action="{{ route('student.courses.lessons.show', [$data[0]->slug, !is_null($data[0]['lesson']->next_lesson) ? $data[0]['lesson']->next_lesson : $data[0]['lesson']->id]) }}">
+                    action="{{ route('student.courses.lessons.show', [$data[0]->slug, !is_null($data[0]['lesson']->next_lesson) ? $data[0]['lesson']->next_lesson : $data[0]['lesson']->order]) }}">
                     <button type="submit" class="btn btn-primary"
                         value="complete_and_continue, {{ $data[0]['lesson']->id }}"
                         name="action">{{ __('Completar & Continuar') }}</button>

@@ -33,7 +33,7 @@
                                             $remainingDaysAccess = $course->remainingDaysAccess();
                                         @endphp
                                         <span
-                                            class="{{ $remainingDaysAccess <= 10 ? 'text-red-500' : 'text-black' }}">{{ $remainingDaysAccess . __(' days left') }}</span>
+                                            class="{{ $remainingDaysAccess <= 10 ? 'text-red-500' : 'text-black' }}">{{ $remainingDaysAccess . __(' Dias restantes') }}</span>
                                     </td>
                                 </tr>
                             @endforeach

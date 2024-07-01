@@ -51,7 +51,7 @@
             <div class="form-group">
                 <label class="form-label" for="price">{{ __('Preço') }}</label>
                 <input id="price" name="price" type="text" class="form-control"
-                    value="{{ old('price', $course->price) }}" required autocomplete="price">
+                    value="{{ old('price', $course->price) }}" required autocomplete="price" oninput="validateNumericInput(event)">
                 <x-input-error class="mt-2" :messages="$errors->get('price')" />
             </div>
 
@@ -101,7 +101,7 @@
             </div>
             <!-- ADD LESSON -->
             <div class="text-end">
-                <a href="{{ route('admin.courses.lessons.create', $course->slug) }}" class="btn btn-primary ">Add</a>
+                <a href="{{ route('admin.courses.lessons.create', $course->slug) }}" class="btn btn-primary ">Adicionar</a>
             </div>
 
             <div class="table-responsive table-hover">

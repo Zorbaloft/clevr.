@@ -23,7 +23,7 @@
         <div class="form-group">
             <label for="order" class="form-label">{{ __('Ordem da Aula') }}</label>
             <input id="order" name="order" type="number" class="form-control mt-1" autofocus
-                autocomplete="order" />
+                autocomplete="order" oninput="validateNumericInput(event)"/>
             <x-input-error class="mt-2" :messages="$errors->get('order')" />
         </div>
         <div class="form-group">
@@ -41,14 +41,14 @@
         <div>
             <label for="courseId" class="form-label">{{ __('ID do Curso:') }} </label>
             <input id="courseId" name="courseId" type="text" class="form-control mt-1"
-                value="{{ old('courseId', $course->id) }}" autocomplete="courseId" />
+                value="{{ old('courseId', $course->id) }}" autocomplete="courseId" oninput="validateNumericInput(event)" />
             <x-input-error class="mt-2" :messages="$errors->get('courseId')" />
         </div>
 
         <div class="form-group">
             <label for="duration" class="form-label">{{ __('Duração da Aula') }}</label>
             <input id="duration" name="duration" type="text" class="form-control mt-1" required autofocus
-                autocomplete="duration" />
+                autocomplete="duration" oninput="validateNumericInput(event)"/>
             <x-input-error class="mt-2" :messages="$errors->get('duration')" />
         </div>
 
@@ -58,7 +58,7 @@
 
             <label for="next_lesson" class="form-label">{{ __('Proxima aula') }}</label>
             <input id="next_lesson" name="next_lesson" type="text" class="form-control mt-1" autofocus
-                autocomplete="next_lesson" />
+                autocomplete="next_lesson" oninput="validateNumericInput(event)"/>
             <x-input-error class="mt-2" :messages="$errors->get('next_lesson')" />
         </div>
 

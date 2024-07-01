@@ -90,8 +90,7 @@
                             <div class="col-md-6">
                                 <div class="card-body p-0">
                                     <h2 class="card-title h4 mb-3">Gonçalo Grilo</h2>
-                                    <p class="card-text lead">Fasciando por tecnologia, no entanto ainda com muito a
-                                        aprender, acredita que um dia será CEO.</p>
+                                    <p class="card-text lead">Com uma ambição de ser Consultor, não deixa esconder o seu amor por Web Development.</p>
                                 </div>
                             </div>
                         </div>

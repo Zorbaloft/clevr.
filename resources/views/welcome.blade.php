@@ -14,7 +14,7 @@
                             <h3 class="fs-3 fw-bold  mb-2 text-uppercase text-center">Expande a tua formação com os nossos
                             </h3>
                             <h2 class="mb-4 display-5 text-center text-uppercase fw-light">Cursos <span
-                                    class="text-color-primary fw-bold">Online?</span>
+                                    class="text-color-primary fw-bold">Online</span>
                             </h2>
                             <ul class="d-flex flex-wrap course-list text-dark list-unstyled px-5">
                                 <li class="mb-3 ">

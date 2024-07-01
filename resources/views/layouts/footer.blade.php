@@ -12,13 +12,13 @@
                 <div class="link-wrapper">
                     <ul class="m-0 list-unstyled d-flex justify-content-center gap-3">
                         <li>
-                            <a href="#!"
+                            <a href="{{ route('home') }}"
                                 class="link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75 fs-7">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#!"
+                            <a href="{{ route('courses.index') }}"
                                 class="link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75 fs-7">
                                 Cursos
                             </a>
